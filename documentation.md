@@ -1,5 +1,5 @@
 ## Summary
-My project is a retro version of battleship, displayed on a 12 x 12 grid of RGB LED lights and controlled with a number pad controller. 
+My project is a retro version of battleship, displayed on a 12 x 12 grid of RGB LED lights and controlled with a number pad controller. To move the cursor of the game, use the numbers 2, 4, 6, and 8 as directions, and the number 7 as the select/place button. The color red represents areas where ships are, and the color blue indicates a barren piece of ocean with no ship. 
 #### Materials
 - Raspberry Pi 4
 - Unicorn Hat HD RGB Matrix 16x16
@@ -32,11 +32,14 @@ The *unicornhathd* library in Python contains all of the functions for operating
 | set_pixel(x, y, red, green, blue) | The coordinates of the light on the grid (x and y) and the RGB color combination for that light | Set a single light's color on the Unicorn Hat |
 | show() | NONE | Using parameters from the set_pixel() function, change the light's color |
 | clear() | NONE | Turns off all lights on the Unicorn Hat |
-| rotation(degree) | 
+| rotation(degree) | Degree of rotation by increments of 90s | Change orientation of the coordinate grid for the LED matrix |
+
 
 ## Sources
 Unicorn Hat HD Pinout Diagram: https://pinout.xyz/pinout/unicorn_hat_hd
+
 Unicorn Hat HD Shop Page: https://shop.pimoroni.com/products/unicorn-hat-hd?variant=42496126730
+
 Unicorn Hat HD Github: https://github.com/pimoroni/unicorn-hat-hd/tree/master
+
 Unicorn Hat HD Text Example: https://github.com/pimoroni/unicorn-hat-hd/blob/master/examples/text.py
-Pillow Module Update Documentation (see font size and offset methods): https://pillow.readthedocs.io/en/stable/releasenotes/10.0.0.html#font-size-and-offset-methods
