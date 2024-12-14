@@ -27,6 +27,12 @@ A hat is an add-on board that can be attached to the Raspberry Pi. The Unicorn H
 ![[Unicorn Hat HD.png]]
 
 The *unicornhathd* library in Python contains all of the functions for operating the lights of the LED matrix.
+| Function | Parameters | Usage |
+| --- | --- | --- |
+| set_pixel(x, y, red, green, blue) | The coordinates of the light on the grid (x and y) and the RGB color combination for that light | Set a single light's color on the Unicorn Hat |
+| show() | NONE | Using parameters from the set_pixel() function, change the light's color |
+| clear() | NONE | Turns off all lights on the Unicorn Hat |
+| rotation(degree) | 
 
 ## Sources
 Unicorn Hat HD Pinout Diagram: https://pinout.xyz/pinout/unicorn_hat_hd
