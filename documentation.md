@@ -24,7 +24,7 @@ The left side of the MCP3008 are individual channels to which analog voltage sho
 
 ## Unicorn Hat HD (Display Screen)
 A hat is an add-on board that can be attached to the Raspberry Pi. The Unicorn Hat that I'm using is a 16x16 RGB LED grid, totaling to 256 lights. 
-![[Unicorn Hat HD.png]]
+![Unicorn Hat HD](https://github.com/user-attachments/assets/6749bfdd-f71c-4d72-8516-5a1990a23456)
 
 The *unicornhathd* library in Python contains all of the functions for operating the lights of the LED matrix.
 | Function | Parameters | Usage |
