@@ -98,11 +98,11 @@ def gameSetup():
 
 #Setup for a player's ships
 def playerSetup(ships, layout):
-	for ship in ships:
-		while True:
-			x = cursor[0]
+	for ship in ships:   #For each ship...
+		while True:   #While loop that repeats until each ship is placed
+			x = cursor[0]   #Save current cursor position
 			y = cursor[1]
-			cursor[0], cursor[1], place, rotate = cursorMovement(input(""), cursor)
+			cursor[0], cursor[1], place, rotate = cursorMovement(input(""), cursor)   #Player input
 			try:
 				for i in range(ships[ship]):
 					if cursor[1]+i > 13:
@@ -113,6 +113,7 @@ def playerSetup(ships, layout):
 					layout["row1"] = 0
 			except IndexError:
 				unicornhathd.clear()
+	return layout
 				
 #Checking for any input
 def cursorMovement(input, cursor):
@@ -144,8 +145,10 @@ def cursorMovement(input, cursor):
 
 
 try:
+	#Set up the game, both players' boards
 	gameSetup()
-	playerSetup(startingShips, player1Layout)
+	player1Layout = playerSetup(startingShips, player1Layout)
+	player2Layout = playerSetup(startingShips, player2Layout)
 except EOFError:
 	unicornhathd.clear()
 
