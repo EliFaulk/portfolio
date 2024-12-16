@@ -43,3 +43,5 @@ Unicorn Hat HD Shop Page: https://shop.pimoroni.com/products/unicorn-hat-hd?vari
 Unicorn Hat HD Github: https://github.com/pimoroni/unicorn-hat-hd/tree/master
 
 Unicorn Hat HD Text Example: https://github.com/pimoroni/unicorn-hat-hd/blob/master/examples/text.py
+
+Unicorn Hat HD Function Reference: http://docs.pimoroni.com/unicornhathd/
